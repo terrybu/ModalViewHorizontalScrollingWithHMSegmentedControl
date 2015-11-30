@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		40CF262DBDD3C97703637A5B /* Pods_ModalViewWithHMSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C15DB54601050C20BB74A8F /* Pods_ModalViewWithHMSegmentedControl.framework */; };
 		D99BF8101C0CDCA2007DF23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99BF80F1C0CDCA2007DF23B /* AppDelegate.swift */; };
-		D99BF8121C0CDCA2007DF23B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99BF8111C0CDCA2007DF23B /* ViewController.swift */; };
+		D99BF8121C0CDCA2007DF23B /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99BF8111C0CDCA2007DF23B /* ModalViewController.swift */; };
 		D99BF8151C0CDCA2007DF23B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99BF8131C0CDCA2007DF23B /* Main.storyboard */; };
 		D99BF8171C0CDCA2007DF23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99BF8161C0CDCA2007DF23B /* Assets.xcassets */; };
 		D99BF81A1C0CDCA2007DF23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99BF8181C0CDCA2007DF23B /* LaunchScreen.storyboard */; };
-		D99BF8231C0CDDED007DF23B /* asdf.m in Sources */ = {isa = PBXBuildFile; fileRef = D99BF8221C0CDDED007DF23B /* asdf.m */; settings = {ASSET_TAGS = (); }; };
+		D99BF8251C0CDED4007DF23B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99BF8241C0CDED4007DF23B /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		D477A5ACAF5C1F13BAC5B2D2 /* Pods-ModalViewWithHMSegmentedControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModalViewWithHMSegmentedControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModalViewWithHMSegmentedControl/Pods-ModalViewWithHMSegmentedControl.debug.xcconfig"; sourceTree = "<group>"; };
 		D99BF80C1C0CDCA2007DF23B /* ModalViewWithHMSegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalViewWithHMSegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99BF80F1C0CDCA2007DF23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D99BF8111C0CDCA2007DF23B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D99BF8111C0CDCA2007DF23B /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		D99BF8141C0CDCA2007DF23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99BF8161C0CDCA2007DF23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99BF8191C0CDCA2007DF23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99BF81B1C0CDCA2007DF23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99BF8211C0CDDED007DF23B /* ModalViewWithHMSegmentedControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModalViewWithHMSegmentedControl-Bridging-Header.h"; sourceTree = "<group>"; };
-		D99BF8221C0CDDED007DF23B /* asdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = asdf.m; sourceTree = "<group>"; };
+		D99BF8241C0CDED4007DF23B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				D99BF80F1C0CDCA2007DF23B /* AppDelegate.swift */,
-				D99BF8111C0CDCA2007DF23B /* ViewController.swift */,
-				D99BF8221C0CDDED007DF23B /* asdf.m */,
+				D99BF8241C0CDED4007DF23B /* MainViewController.swift */,
+				D99BF8111C0CDCA2007DF23B /* ModalViewController.swift */,
 				D99BF8131C0CDCA2007DF23B /* Main.storyboard */,
 				D99BF8161C0CDCA2007DF23B /* Assets.xcassets */,
 				D99BF8181C0CDCA2007DF23B /* LaunchScreen.storyboard */,
@@ -215,8 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99BF8121C0CDCA2007DF23B /* ViewController.swift in Sources */,
-				D99BF8231C0CDDED007DF23B /* asdf.m in Sources */,
+				D99BF8251C0CDED4007DF23B /* MainViewController.swift in Sources */,
+				D99BF8121C0CDCA2007DF23B /* ModalViewController.swift in Sources */,
 				D99BF8101C0CDCA2007DF23B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

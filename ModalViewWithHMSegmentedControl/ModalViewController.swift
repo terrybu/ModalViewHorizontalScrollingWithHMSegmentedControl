@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ModalViewController.swift
 //  ModalViewWithHMSegmentedControl
 //
 //  Created by Terry Bu on 11/30/15.
@@ -11,11 +11,11 @@ import HMSegmentedControl
 
 private let kLeftSidePadding: CGFloat = 15
 
-
-class ViewController: UIViewController, UIScrollViewDelegate{
+class ModalViewController: UIViewController, UIScrollViewDelegate{
     
     var segmentedControl : HMSegmentedControl!
     var horizontalScrollView : UIScrollView!
+    var mainVC: MainViewController!
     
     override func didMoveToParentViewController(parent: UIViewController?) {
         let viewWidth = CGRectGetWidth(self.view.frame)
@@ -106,17 +106,15 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         if let segControlTitleFont =  segControlTitleFont {
             //regular font
             segmentedControl.titleTextAttributes = [
-                NSForegroundColorAttributeName : UIColor(rgba: "#bbbcbc"),
                 NSFontAttributeName : segControlTitleFont
             ]
             //selected font
             segmentedControl.selectedTitleTextAttributes = [
-                NSForegroundColorAttributeName : UIColor.In2DeepPurple(),
                 NSFontAttributeName : segControlTitleFont
             ]
         }
         
-        segmentedControl.selectionIndicatorColor = UIColor.In2DeepPurple()
+        segmentedControl.selectionIndicatorColor = UIColor.purpleColor()
         segmentedControl.indexChangeBlock = ({ (index : NSInteger) -> Void in
             self.horizontalScrollView.scrollRectToVisible(CGRectMake(viewWidth * CGFloat(index), 0, viewWidth, 200), animated: true)
         })
@@ -157,7 +155,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     //so you must use @objc keyword
     @objc
     private func closeButtonPressed() {
-        
+        mainVC.closeAboutPIModal()
     }
 
     override func viewDidLoad() {
